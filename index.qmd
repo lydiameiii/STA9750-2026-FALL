@@ -1,0 +1,72 @@
+---
+title: "Lydia Mei"
+---
+![](images/profile.png){width=200}
+
+
+### **About Me**
+
+----------
+
+I am currently a graduate student at Baruch College pursuing a Master of Science in Quantitative Methods & Modeling. I am an aspiring data analyst, with a background in data analytics, mathematics, and computer information systems.  
+
+In addition to academics, I work part-time at a NYC Public High School tutoring students in mathematics.
+
+<br>
+
+### **Education**
+
+----------
+
+##### **Baruch College, CUNY**  
+M.S. in Quantitative Methods & Modeling  
+Expected 2028
+
+##### **Baruch College -- Macaulay Honors College, CUNY**  
+B.B.A. in Computer Information Systems -- Data Analytics  
+Minors: Mathematics, New York City Studies
+
+<br>
+
+### **Resume**
+
+----------
+
+[Download My Resume](resume.pdf)
+
+<br>
+
+### **Contact**
+
+----------
+
+LinkedIn: [www.linkedin.com/in/lydia-mei](https://www.linkedin.com/in/lydia-mei)  
+Email: Lydia.f.mei@gmail.com
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+if(!require("leaflet")){
+    options(repos=c(CRAN="https://cloud.r-project.org"))
+    install.packages("leaflet")
+    stopifnot(require("leaflet"))
+}
+
+baruch_longitude <- -73.98333
+baruch_latitude  <- +40.74028
+
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude, 
+            "Find me at <b>Baruch College</b>!")
+```
+
+```{r}
+#| include: false
+1+1
+```
+_______________________________
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
