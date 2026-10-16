@@ -382,7 +382,7 @@ catalog_size |>
               decimals = 2)
 
 
-#inline code for missing value percentage in 2023H1
+# Inline code for missing value percentage in 2023H1
 missing_runtime_pct <- NETFLIX_DATA |>
   summarize(
     missing_2023H1 = sum(period == "2023H1" & is.na(runtime)),
@@ -513,7 +513,7 @@ Any titles with a runtime exceeding 240 hours or contained words synonymous with
 #| code-fold: true
 #| code-summary: "Show Code"
 
-#input values for views by dividing hours_viewed by runtime
+# Input values for views by dividing hours_viewed by runtime
 inputted_netflix_data <- NETFLIX_DATA |>
   mutate(views_inputted = if_else(
       is.na(views) &
