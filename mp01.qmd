@@ -78,21 +78,28 @@ load_netflix_data <- function(){
     map(html_element, xpath = "//a[contains(@href, '.xlsx')]") |> 
     map_chr(html_attr, "href") |> 
     enframe("period", "url") |> 
-   mutate(path = path(data_dir, paste0(period, ".xlsx")), 
-          path = map2(url, path, download_if_needed), 
-          data = map(path, read_excel, skip=3, na="*"), 
-          data = map(data, \(x) x |> mutate(`Release Date` = as.Date(`Release Date`)))) |>
+    mutate(path = path(data_dir, paste0(period, ".xlsx")), 
+           path = map2(url, path, download_if_needed), 
+           sheets = map(path, excel_sheets)) |>
+    unnest(sheets) |> 
+    mutate(data = map2(path, sheets, \(x, y) read_excel(x, sheet=y, skip=3, na="*")), 
+           data = map(data, \(x) x |> mutate(`Release Date` = as.Date(`Release Date`))), 
+           data = map2(data, sheets, \(x, y) x |> mutate(sheet=y))) |> 
     unnest(data) |> 
-    select(-url, -path) |> 
+    select(-url, -path, -sheets) |> 
     mutate(year=str_sub(period, 1, 4), 
            half=str_sub(period, start=6), 
            period_start = make_date(year, if_else(half==1, 1, 7), 1), 
            period_end = make_date(year, if_else(half==1, 6, 12), if_else(half==1, 30, 31))) |> 
-    filter(!is.na(`Hours Viewed`)) |> 
+    filter(!is.na(`Hours Viewed`)) |>
     mutate(live_event = !is.na(Runtime) & str_detect(Runtime, "\\d+:\\d+\\*"), 
            clean_time = str_remove(Runtime, fixed("*")),
-           Runtime = 60 * hour(hm(clean_time)) + minute(hm(clean_time))) |>
-    select(-clean_time) |>
+           Runtime = 60 * hour(hm(clean_time)) + minute(hm(clean_time)),
+           title_type = replace_values(sheet, 
+                                      "Shows" ~ "TV",
+                                      "Film" ~ "Movies",
+                                      "Engagement" ~ NA)) |>
+    select(-clean_time, -sheet) |>
     mutate(Runtime = coalesce(Runtime, mean(Runtime, na.rm=TRUE)), 
            .by=Title, 
            Title = stringi::stri_trans_general(Title, "Latin-ASCII"),
@@ -111,7 +118,12 @@ load_netflix_data <- function(){
            `Hours Viewed`, 
            `Release Date`,
            `Available Globally?`, 
-           live_event) |>
+           live_event, 
+           title_type) |> 
+    group_by(Title) |> 
+    fill(title_type,
+         .direction="updown") |>
+    ungroup() |>
     rename(title = `Title`,
            runtime = `Runtime`,
            views = `Views`,
@@ -163,10 +175,12 @@ The summary displays each data type found in the data set and the corresponding 
 
 #Q1: Identify date range of data set
 start_date <- NETFLIX_DATA |>
-  summarize(min(period_start))
+  summarize(start = min(period_start)) |>
+  pull(start)
 
 end_date <- NETFLIX_DATA |>
-  summarize(max(period_end))
+  summarize(end = max(period_end)) |>
+  pull(end)
 
 
 #Q2: Identify number of shows/movies in data set
@@ -351,7 +365,7 @@ The top title for each period was identified by selecting the title with the mos
 
 ### Change in Netflix Catalog Over Time
 
-The number of titles in Netflix's catalog is the highest in the first half of 2023, but significantly declined in the second half of the year. Afterwards, the number of distinct titles continuously increased across the remaining periods.
+The number of titles in Netflix's catalog is the highest in the first half of 2023, but significantly declined by 12.16% in the second half of the year. Afterwards, the number of distinct titles remained relatively stable with a slight decline in the second half of 2024.
 
 ```{r}
 #| code-fold: true
@@ -370,7 +384,7 @@ catalog_size |>
   gt() |>
   cols_label(period = "Period",
              title_count = "Title Count",
-             total_runtime = "Total Runtime",
+             total_runtime = "Total Runtime (in Minutes)",
              title_pct_change = "Title Count Percent Change",
              runtime_pct_change = "Total Runtime Percent Change") |>
   cols_align(align = "center") |>
@@ -380,7 +394,6 @@ catalog_size |>
              use_seps = TRUE) |>
   fmt_percent(columns = c(title_pct_change, runtime_pct_change),
               decimals = 2)
-
 
 # Inline code for missing value percentage in 2023H1
 missing_runtime_pct <- NETFLIX_DATA |>
@@ -394,9 +407,9 @@ missing_runtime_pct <- NETFLIX_DATA |>
   pull(missing_pct)
 ```
 
-Despite having the highest title count, the total runtime in the first half of 2023 was the lowest amongst all the periods. This was likely due to the majority of the missing values in the runtime column (approximately `r missing_runtime_pct`%) occurring during this period. Since the missing values were excluded from the calculations, the total runtime may be drastically underestimated for that period in 2023. \
+Despite having the highest title count, the total runtime in the first half of 2023 was the lowest amongst all the periods. During this period, the majority of the missing values in the runtime column (approximately `r missing_runtime_pct`%) occurred. Since the missing values were excluded from the calculations, the total runtime may be underestimated for that period in 2023. \
 
-Excluding the initial period, the number of titles and total runtime continued to increase throughout the remaining periods.
+Excluding the initial period, the total runtime continued to increase in every period.
 
 <br>
 
@@ -458,7 +471,7 @@ Ranking the titles with the highest average viewing hours by coefficient of vari
 
 ### Shows vs. Movies
 
-Approximately 98-99% of viewing hours were spent watching TV shows, leaving movies with only 1-2% of the total viewing hours.
+Approximately 71-76% of viewing hours were spent watching TV shows, leaving movies with 24-29% of the total viewing hours.
 
 ```{r}
 #| code-fold: true
@@ -544,9 +557,9 @@ live_taped_comparison <- bind_cols(live_event_views,
           taped_content_views) |>
   gt() |>
   cols_label(avg_live_views = "Avg. Views for Live Events",
-             avg_taped_views = "Avg. Views for Taped Content") |>
+             avg_taped_views = "Avg. Views for Pre-Taped Content") |>
   cols_align(align = "center") |>
-  tab_header(title = "Average Views Comparison: Live Events vs. Taped Content") |>
+  tab_header(title = "Average Views Comparison: Live Events vs. Pre-Taped Content") |>
   fmt_number(columns = c(avg_live_views, avg_taped_views),
              decimals = 2,
              use_seps = TRUE)
@@ -578,9 +591,9 @@ top_live_taped_comparison <-
             top_taped_content_views) |>
   gt() |>
   cols_label(avg_top_live = "Avg. Views for Top Live Events",
-             avg_top_taped = "Avg. Views for Top Taped Content") |>
+             avg_top_taped = "Avg. Views for Top Pre-Taped Content") |>
   cols_align(align = "center") |>
-  tab_header(title = "Average Views Comparison: Top Live Events vs. Top Taped Content") |>
+  tab_header(title = "Average Views Comparison: Top Live Events vs. Pre-Top Taped Content") |>
   fmt_number(columns = c(avg_top_live, avg_top_taped),
              decimals = 2,
              use_seps = TRUE)
