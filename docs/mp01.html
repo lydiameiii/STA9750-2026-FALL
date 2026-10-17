@@ -315,7 +315,7 @@ $ live_event         &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
 $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV…</code></pre>
 </div>
 </div>
-<p>The data set contains over 60,000 records and 11 available variables. Each column has been transformed into the data type most optimized for data modeling.<br>
+<p>The data set contains over 115,000 records and 12 available variables. Each column has been transformed into the data type most optimized for data modeling.<br>
 </p>
 <p><br></p>
 <p>Summarizing the data provides a more in-depth breakdown of each column’s content.</p>
@@ -784,7 +784,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <li><p>The fraction of titles that are globally available is 22.79%</p></li>
 <li><p>The fraction of viewing hours for globally available content is 48.99%</p></li>
 </ul>
-<p>Although Netflix’s catalog contains a small share (approximately 1/4) of globally available content, more than 50% of total viewing hours come from globally available titles.</p>
+<p>Although Netflix’s catalog contains a small share (less than 1/4) of globally available content, almost 50% of total viewing hours come from globally available titles.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Note">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -841,23 +841,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>              <span class="at">decimals =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="vpxdilyfmd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#vpxdilyfmd table {
+<div id="biolgaosac" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#biolgaosac table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#vpxdilyfmd thead, #vpxdilyfmd tbody, #vpxdilyfmd tfoot, #vpxdilyfmd tr, #vpxdilyfmd td, #vpxdilyfmd th {
+#biolgaosac thead, #biolgaosac tbody, #biolgaosac tfoot, #biolgaosac tr, #biolgaosac td, #biolgaosac th {
   border-style: none;
 }
 
-#vpxdilyfmd p {
+#biolgaosac p {
   margin: 0;
   padding: 0;
 }
 
-#vpxdilyfmd .gt_table {
+#biolgaosac .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -883,12 +883,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_caption {
+#biolgaosac .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#vpxdilyfmd .gt_title {
+#biolgaosac .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -900,7 +900,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#vpxdilyfmd .gt_subtitle {
+#biolgaosac .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -912,7 +912,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#vpxdilyfmd .gt_heading {
+#biolgaosac .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -924,13 +924,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_bottom_border {
+#biolgaosac .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_col_headings {
+#biolgaosac .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -945,7 +945,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_col_heading {
+#biolgaosac .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -965,7 +965,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#vpxdilyfmd .gt_column_spanner_outer {
+#biolgaosac .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -977,15 +977,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#vpxdilyfmd .gt_column_spanner_outer:first-child {
+#biolgaosac .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vpxdilyfmd .gt_column_spanner_outer:last-child {
+#biolgaosac .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vpxdilyfmd .gt_column_spanner {
+#biolgaosac .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -997,11 +997,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#vpxdilyfmd .gt_spanner_row {
+#biolgaosac .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#vpxdilyfmd .gt_group_heading {
+#biolgaosac .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1027,7 +1027,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#vpxdilyfmd .gt_empty_group_heading {
+#biolgaosac .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1042,15 +1042,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#vpxdilyfmd .gt_from_md > :first-child {
+#biolgaosac .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vpxdilyfmd .gt_from_md > :last-child {
+#biolgaosac .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vpxdilyfmd .gt_row {
+#biolgaosac .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1069,7 +1069,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#vpxdilyfmd .gt_stub {
+#biolgaosac .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1082,7 +1082,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#vpxdilyfmd .gt_stub_row_group {
+#biolgaosac .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1096,15 +1096,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#vpxdilyfmd .gt_row_group_first td {
+#biolgaosac .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#vpxdilyfmd .gt_row_group_first th {
+#biolgaosac .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#vpxdilyfmd .gt_summary_row {
+#biolgaosac .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1114,16 +1114,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#vpxdilyfmd .gt_first_summary_row {
+#biolgaosac .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_first_summary_row.thick {
+#biolgaosac .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#vpxdilyfmd .gt_last_summary_row {
+#biolgaosac .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1133,7 +1133,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_grand_summary_row {
+#biolgaosac .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1143,7 +1143,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#vpxdilyfmd .gt_first_grand_summary_row {
+#biolgaosac .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1153,7 +1153,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_last_grand_summary_row_top {
+#biolgaosac .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1163,11 +1163,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_striped {
+#biolgaosac .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vpxdilyfmd .gt_table_body {
+#biolgaosac .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1176,7 +1176,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_footnotes {
+#biolgaosac .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1190,7 +1190,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_footnote {
+#biolgaosac .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1199,7 +1199,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#vpxdilyfmd .gt_sourcenotes {
+#biolgaosac .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1213,7 +1213,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#vpxdilyfmd .gt_sourcenote {
+#biolgaosac .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1221,72 +1221,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#vpxdilyfmd .gt_left {
+#biolgaosac .gt_left {
   text-align: left;
 }
 
-#vpxdilyfmd .gt_center {
+#biolgaosac .gt_center {
   text-align: center;
 }
 
-#vpxdilyfmd .gt_right {
+#biolgaosac .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vpxdilyfmd .gt_font_normal {
+#biolgaosac .gt_font_normal {
   font-weight: normal;
 }
 
-#vpxdilyfmd .gt_font_bold {
+#biolgaosac .gt_font_bold {
   font-weight: bold;
 }
 
-#vpxdilyfmd .gt_font_italic {
+#biolgaosac .gt_font_italic {
   font-style: italic;
 }
 
-#vpxdilyfmd .gt_super {
+#biolgaosac .gt_super {
   font-size: 65%;
 }
 
-#vpxdilyfmd .gt_footnote_marks {
+#biolgaosac .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#vpxdilyfmd .gt_asterisk {
+#biolgaosac .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#vpxdilyfmd .gt_indent_1 {
+#biolgaosac .gt_indent_1 {
   text-indent: 5px;
 }
 
-#vpxdilyfmd .gt_indent_2 {
+#biolgaosac .gt_indent_2 {
   text-indent: 10px;
 }
 
-#vpxdilyfmd .gt_indent_3 {
+#biolgaosac .gt_indent_3 {
   text-indent: 15px;
 }
 
-#vpxdilyfmd .gt_indent_4 {
+#biolgaosac .gt_indent_4 {
   text-indent: 20px;
 }
 
-#vpxdilyfmd .gt_indent_5 {
+#biolgaosac .gt_indent_5 {
   text-indent: 25px;
 }
 
-#vpxdilyfmd .katex-display {
+#biolgaosac .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#vpxdilyfmd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#biolgaosac div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1388,23 +1388,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>              <span class="at">decimals =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="ixpmoevppc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ixpmoevppc table {
+<div id="abrcyrlnzi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#abrcyrlnzi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ixpmoevppc thead, #ixpmoevppc tbody, #ixpmoevppc tfoot, #ixpmoevppc tr, #ixpmoevppc td, #ixpmoevppc th {
+#abrcyrlnzi thead, #abrcyrlnzi tbody, #abrcyrlnzi tfoot, #abrcyrlnzi tr, #abrcyrlnzi td, #abrcyrlnzi th {
   border-style: none;
 }
 
-#ixpmoevppc p {
+#abrcyrlnzi p {
   margin: 0;
   padding: 0;
 }
 
-#ixpmoevppc .gt_table {
+#abrcyrlnzi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1430,12 +1430,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_caption {
+#abrcyrlnzi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ixpmoevppc .gt_title {
+#abrcyrlnzi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1447,7 +1447,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#ixpmoevppc .gt_subtitle {
+#abrcyrlnzi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1459,7 +1459,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#ixpmoevppc .gt_heading {
+#abrcyrlnzi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1471,13 +1471,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_bottom_border {
+#abrcyrlnzi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_col_headings {
+#abrcyrlnzi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1492,7 +1492,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_col_heading {
+#abrcyrlnzi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1512,7 +1512,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#ixpmoevppc .gt_column_spanner_outer {
+#abrcyrlnzi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1524,15 +1524,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#ixpmoevppc .gt_column_spanner_outer:first-child {
+#abrcyrlnzi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ixpmoevppc .gt_column_spanner_outer:last-child {
+#abrcyrlnzi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ixpmoevppc .gt_column_spanner {
+#abrcyrlnzi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1544,11 +1544,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#ixpmoevppc .gt_spanner_row {
+#abrcyrlnzi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ixpmoevppc .gt_group_heading {
+#abrcyrlnzi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1574,7 +1574,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#ixpmoevppc .gt_empty_group_heading {
+#abrcyrlnzi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1589,15 +1589,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#ixpmoevppc .gt_from_md > :first-child {
+#abrcyrlnzi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ixpmoevppc .gt_from_md > :last-child {
+#abrcyrlnzi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ixpmoevppc .gt_row {
+#abrcyrlnzi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1616,7 +1616,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#ixpmoevppc .gt_stub {
+#abrcyrlnzi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1629,7 +1629,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#ixpmoevppc .gt_stub_row_group {
+#abrcyrlnzi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1643,15 +1643,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#ixpmoevppc .gt_row_group_first td {
+#abrcyrlnzi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ixpmoevppc .gt_row_group_first th {
+#abrcyrlnzi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ixpmoevppc .gt_summary_row {
+#abrcyrlnzi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1661,16 +1661,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#ixpmoevppc .gt_first_summary_row {
+#abrcyrlnzi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_first_summary_row.thick {
+#abrcyrlnzi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ixpmoevppc .gt_last_summary_row {
+#abrcyrlnzi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1680,7 +1680,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_grand_summary_row {
+#abrcyrlnzi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1690,7 +1690,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#ixpmoevppc .gt_first_grand_summary_row {
+#abrcyrlnzi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1700,7 +1700,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_last_grand_summary_row_top {
+#abrcyrlnzi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1710,11 +1710,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_striped {
+#abrcyrlnzi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ixpmoevppc .gt_table_body {
+#abrcyrlnzi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1723,7 +1723,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_footnotes {
+#abrcyrlnzi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1737,7 +1737,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_footnote {
+#abrcyrlnzi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1746,7 +1746,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#ixpmoevppc .gt_sourcenotes {
+#abrcyrlnzi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1760,7 +1760,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#ixpmoevppc .gt_sourcenote {
+#abrcyrlnzi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1768,72 +1768,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#ixpmoevppc .gt_left {
+#abrcyrlnzi .gt_left {
   text-align: left;
 }
 
-#ixpmoevppc .gt_center {
+#abrcyrlnzi .gt_center {
   text-align: center;
 }
 
-#ixpmoevppc .gt_right {
+#abrcyrlnzi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ixpmoevppc .gt_font_normal {
+#abrcyrlnzi .gt_font_normal {
   font-weight: normal;
 }
 
-#ixpmoevppc .gt_font_bold {
+#abrcyrlnzi .gt_font_bold {
   font-weight: bold;
 }
 
-#ixpmoevppc .gt_font_italic {
+#abrcyrlnzi .gt_font_italic {
   font-style: italic;
 }
 
-#ixpmoevppc .gt_super {
+#abrcyrlnzi .gt_super {
   font-size: 65%;
 }
 
-#ixpmoevppc .gt_footnote_marks {
+#abrcyrlnzi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ixpmoevppc .gt_asterisk {
+#abrcyrlnzi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ixpmoevppc .gt_indent_1 {
+#abrcyrlnzi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ixpmoevppc .gt_indent_2 {
+#abrcyrlnzi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ixpmoevppc .gt_indent_3 {
+#abrcyrlnzi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ixpmoevppc .gt_indent_4 {
+#abrcyrlnzi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ixpmoevppc .gt_indent_5 {
+#abrcyrlnzi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ixpmoevppc .katex-display {
+#abrcyrlnzi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ixpmoevppc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#abrcyrlnzi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1969,23 +1969,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_percent</span>(<span class="at">columns =</span> cv_hours, <span class="at">decimals =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="gdrseaielz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gdrseaielz table {
+<div id="tsgaplhgyn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tsgaplhgyn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gdrseaielz thead, #gdrseaielz tbody, #gdrseaielz tfoot, #gdrseaielz tr, #gdrseaielz td, #gdrseaielz th {
+#tsgaplhgyn thead, #tsgaplhgyn tbody, #tsgaplhgyn tfoot, #tsgaplhgyn tr, #tsgaplhgyn td, #tsgaplhgyn th {
   border-style: none;
 }
 
-#gdrseaielz p {
+#tsgaplhgyn p {
   margin: 0;
   padding: 0;
 }
 
-#gdrseaielz .gt_table {
+#tsgaplhgyn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2011,12 +2011,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_caption {
+#tsgaplhgyn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gdrseaielz .gt_title {
+#tsgaplhgyn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2028,7 +2028,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#gdrseaielz .gt_subtitle {
+#tsgaplhgyn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2040,7 +2040,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#gdrseaielz .gt_heading {
+#tsgaplhgyn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2052,13 +2052,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_bottom_border {
+#tsgaplhgyn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_col_headings {
+#tsgaplhgyn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2073,7 +2073,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_col_heading {
+#tsgaplhgyn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2093,7 +2093,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#gdrseaielz .gt_column_spanner_outer {
+#tsgaplhgyn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2105,15 +2105,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#gdrseaielz .gt_column_spanner_outer:first-child {
+#tsgaplhgyn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gdrseaielz .gt_column_spanner_outer:last-child {
+#tsgaplhgyn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gdrseaielz .gt_column_spanner {
+#tsgaplhgyn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2125,11 +2125,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#gdrseaielz .gt_spanner_row {
+#tsgaplhgyn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gdrseaielz .gt_group_heading {
+#tsgaplhgyn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2155,7 +2155,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#gdrseaielz .gt_empty_group_heading {
+#tsgaplhgyn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2170,15 +2170,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#gdrseaielz .gt_from_md > :first-child {
+#tsgaplhgyn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gdrseaielz .gt_from_md > :last-child {
+#tsgaplhgyn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gdrseaielz .gt_row {
+#tsgaplhgyn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2197,7 +2197,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#gdrseaielz .gt_stub {
+#tsgaplhgyn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2210,7 +2210,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#gdrseaielz .gt_stub_row_group {
+#tsgaplhgyn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2224,15 +2224,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#gdrseaielz .gt_row_group_first td {
+#tsgaplhgyn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gdrseaielz .gt_row_group_first th {
+#tsgaplhgyn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gdrseaielz .gt_summary_row {
+#tsgaplhgyn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2242,16 +2242,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#gdrseaielz .gt_first_summary_row {
+#tsgaplhgyn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_first_summary_row.thick {
+#tsgaplhgyn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gdrseaielz .gt_last_summary_row {
+#tsgaplhgyn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2261,7 +2261,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_grand_summary_row {
+#tsgaplhgyn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2271,7 +2271,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#gdrseaielz .gt_first_grand_summary_row {
+#tsgaplhgyn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2281,7 +2281,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_last_grand_summary_row_top {
+#tsgaplhgyn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2291,11 +2291,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_striped {
+#tsgaplhgyn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gdrseaielz .gt_table_body {
+#tsgaplhgyn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2304,7 +2304,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_footnotes {
+#tsgaplhgyn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2318,7 +2318,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_footnote {
+#tsgaplhgyn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2327,7 +2327,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#gdrseaielz .gt_sourcenotes {
+#tsgaplhgyn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2341,7 +2341,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#gdrseaielz .gt_sourcenote {
+#tsgaplhgyn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2349,72 +2349,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#gdrseaielz .gt_left {
+#tsgaplhgyn .gt_left {
   text-align: left;
 }
 
-#gdrseaielz .gt_center {
+#tsgaplhgyn .gt_center {
   text-align: center;
 }
 
-#gdrseaielz .gt_right {
+#tsgaplhgyn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gdrseaielz .gt_font_normal {
+#tsgaplhgyn .gt_font_normal {
   font-weight: normal;
 }
 
-#gdrseaielz .gt_font_bold {
+#tsgaplhgyn .gt_font_bold {
   font-weight: bold;
 }
 
-#gdrseaielz .gt_font_italic {
+#tsgaplhgyn .gt_font_italic {
   font-style: italic;
 }
 
-#gdrseaielz .gt_super {
+#tsgaplhgyn .gt_super {
   font-size: 65%;
 }
 
-#gdrseaielz .gt_footnote_marks {
+#tsgaplhgyn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gdrseaielz .gt_asterisk {
+#tsgaplhgyn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gdrseaielz .gt_indent_1 {
+#tsgaplhgyn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gdrseaielz .gt_indent_2 {
+#tsgaplhgyn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gdrseaielz .gt_indent_3 {
+#tsgaplhgyn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gdrseaielz .gt_indent_4 {
+#tsgaplhgyn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gdrseaielz .gt_indent_5 {
+#tsgaplhgyn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gdrseaielz .katex-display {
+#tsgaplhgyn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gdrseaielz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tsgaplhgyn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2558,23 +2558,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>             <span class="at">use_seps =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="dkywfeaedl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dkywfeaedl table {
+<div id="mofltkzbfx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mofltkzbfx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dkywfeaedl thead, #dkywfeaedl tbody, #dkywfeaedl tfoot, #dkywfeaedl tr, #dkywfeaedl td, #dkywfeaedl th {
+#mofltkzbfx thead, #mofltkzbfx tbody, #mofltkzbfx tfoot, #mofltkzbfx tr, #mofltkzbfx td, #mofltkzbfx th {
   border-style: none;
 }
 
-#dkywfeaedl p {
+#mofltkzbfx p {
   margin: 0;
   padding: 0;
 }
 
-#dkywfeaedl .gt_table {
+#mofltkzbfx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2600,12 +2600,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_caption {
+#mofltkzbfx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dkywfeaedl .gt_title {
+#mofltkzbfx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2617,7 +2617,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#dkywfeaedl .gt_subtitle {
+#mofltkzbfx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2629,7 +2629,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#dkywfeaedl .gt_heading {
+#mofltkzbfx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2641,13 +2641,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_bottom_border {
+#mofltkzbfx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_col_headings {
+#mofltkzbfx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2662,7 +2662,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_col_heading {
+#mofltkzbfx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2682,7 +2682,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#dkywfeaedl .gt_column_spanner_outer {
+#mofltkzbfx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2694,15 +2694,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#dkywfeaedl .gt_column_spanner_outer:first-child {
+#mofltkzbfx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dkywfeaedl .gt_column_spanner_outer:last-child {
+#mofltkzbfx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dkywfeaedl .gt_column_spanner {
+#mofltkzbfx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2714,11 +2714,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#dkywfeaedl .gt_spanner_row {
+#mofltkzbfx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dkywfeaedl .gt_group_heading {
+#mofltkzbfx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2744,7 +2744,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#dkywfeaedl .gt_empty_group_heading {
+#mofltkzbfx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2759,15 +2759,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#dkywfeaedl .gt_from_md > :first-child {
+#mofltkzbfx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dkywfeaedl .gt_from_md > :last-child {
+#mofltkzbfx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dkywfeaedl .gt_row {
+#mofltkzbfx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2786,7 +2786,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#dkywfeaedl .gt_stub {
+#mofltkzbfx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2799,7 +2799,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#dkywfeaedl .gt_stub_row_group {
+#mofltkzbfx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2813,15 +2813,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#dkywfeaedl .gt_row_group_first td {
+#mofltkzbfx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dkywfeaedl .gt_row_group_first th {
+#mofltkzbfx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dkywfeaedl .gt_summary_row {
+#mofltkzbfx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2831,16 +2831,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#dkywfeaedl .gt_first_summary_row {
+#mofltkzbfx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_first_summary_row.thick {
+#mofltkzbfx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dkywfeaedl .gt_last_summary_row {
+#mofltkzbfx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2850,7 +2850,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_grand_summary_row {
+#mofltkzbfx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2860,7 +2860,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#dkywfeaedl .gt_first_grand_summary_row {
+#mofltkzbfx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2870,7 +2870,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_last_grand_summary_row_top {
+#mofltkzbfx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2880,11 +2880,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_striped {
+#mofltkzbfx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dkywfeaedl .gt_table_body {
+#mofltkzbfx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2893,7 +2893,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_footnotes {
+#mofltkzbfx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2907,7 +2907,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_footnote {
+#mofltkzbfx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2916,7 +2916,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#dkywfeaedl .gt_sourcenotes {
+#mofltkzbfx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2930,7 +2930,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#dkywfeaedl .gt_sourcenote {
+#mofltkzbfx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2938,72 +2938,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#dkywfeaedl .gt_left {
+#mofltkzbfx .gt_left {
   text-align: left;
 }
 
-#dkywfeaedl .gt_center {
+#mofltkzbfx .gt_center {
   text-align: center;
 }
 
-#dkywfeaedl .gt_right {
+#mofltkzbfx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dkywfeaedl .gt_font_normal {
+#mofltkzbfx .gt_font_normal {
   font-weight: normal;
 }
 
-#dkywfeaedl .gt_font_bold {
+#mofltkzbfx .gt_font_bold {
   font-weight: bold;
 }
 
-#dkywfeaedl .gt_font_italic {
+#mofltkzbfx .gt_font_italic {
   font-style: italic;
 }
 
-#dkywfeaedl .gt_super {
+#mofltkzbfx .gt_super {
   font-size: 65%;
 }
 
-#dkywfeaedl .gt_footnote_marks {
+#mofltkzbfx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dkywfeaedl .gt_asterisk {
+#mofltkzbfx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dkywfeaedl .gt_indent_1 {
+#mofltkzbfx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dkywfeaedl .gt_indent_2 {
+#mofltkzbfx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dkywfeaedl .gt_indent_3 {
+#mofltkzbfx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dkywfeaedl .gt_indent_4 {
+#mofltkzbfx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dkywfeaedl .gt_indent_5 {
+#mofltkzbfx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dkywfeaedl .katex-display {
+#mofltkzbfx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dkywfeaedl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mofltkzbfx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3125,23 +3125,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>live_taped_comparison</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="obayfsebbs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#obayfsebbs table {
+<div id="flymqswpbg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#flymqswpbg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#obayfsebbs thead, #obayfsebbs tbody, #obayfsebbs tfoot, #obayfsebbs tr, #obayfsebbs td, #obayfsebbs th {
+#flymqswpbg thead, #flymqswpbg tbody, #flymqswpbg tfoot, #flymqswpbg tr, #flymqswpbg td, #flymqswpbg th {
   border-style: none;
 }
 
-#obayfsebbs p {
+#flymqswpbg p {
   margin: 0;
   padding: 0;
 }
 
-#obayfsebbs .gt_table {
+#flymqswpbg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3167,12 +3167,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_caption {
+#flymqswpbg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#obayfsebbs .gt_title {
+#flymqswpbg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3184,7 +3184,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#obayfsebbs .gt_subtitle {
+#flymqswpbg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3196,7 +3196,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#obayfsebbs .gt_heading {
+#flymqswpbg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3208,13 +3208,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_bottom_border {
+#flymqswpbg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_col_headings {
+#flymqswpbg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3229,7 +3229,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_col_heading {
+#flymqswpbg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3249,7 +3249,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#obayfsebbs .gt_column_spanner_outer {
+#flymqswpbg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3261,15 +3261,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#obayfsebbs .gt_column_spanner_outer:first-child {
+#flymqswpbg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#obayfsebbs .gt_column_spanner_outer:last-child {
+#flymqswpbg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#obayfsebbs .gt_column_spanner {
+#flymqswpbg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3281,11 +3281,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#obayfsebbs .gt_spanner_row {
+#flymqswpbg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#obayfsebbs .gt_group_heading {
+#flymqswpbg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3311,7 +3311,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#obayfsebbs .gt_empty_group_heading {
+#flymqswpbg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3326,15 +3326,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#obayfsebbs .gt_from_md > :first-child {
+#flymqswpbg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#obayfsebbs .gt_from_md > :last-child {
+#flymqswpbg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#obayfsebbs .gt_row {
+#flymqswpbg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3353,7 +3353,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#obayfsebbs .gt_stub {
+#flymqswpbg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3366,7 +3366,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#obayfsebbs .gt_stub_row_group {
+#flymqswpbg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3380,15 +3380,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#obayfsebbs .gt_row_group_first td {
+#flymqswpbg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#obayfsebbs .gt_row_group_first th {
+#flymqswpbg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#obayfsebbs .gt_summary_row {
+#flymqswpbg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3398,16 +3398,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#obayfsebbs .gt_first_summary_row {
+#flymqswpbg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_first_summary_row.thick {
+#flymqswpbg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#obayfsebbs .gt_last_summary_row {
+#flymqswpbg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3417,7 +3417,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_grand_summary_row {
+#flymqswpbg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3427,7 +3427,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#obayfsebbs .gt_first_grand_summary_row {
+#flymqswpbg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3437,7 +3437,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_last_grand_summary_row_top {
+#flymqswpbg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3447,11 +3447,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_striped {
+#flymqswpbg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#obayfsebbs .gt_table_body {
+#flymqswpbg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3460,7 +3460,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_footnotes {
+#flymqswpbg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3474,7 +3474,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_footnote {
+#flymqswpbg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3483,7 +3483,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#obayfsebbs .gt_sourcenotes {
+#flymqswpbg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3497,7 +3497,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#obayfsebbs .gt_sourcenote {
+#flymqswpbg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3505,72 +3505,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#obayfsebbs .gt_left {
+#flymqswpbg .gt_left {
   text-align: left;
 }
 
-#obayfsebbs .gt_center {
+#flymqswpbg .gt_center {
   text-align: center;
 }
 
-#obayfsebbs .gt_right {
+#flymqswpbg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#obayfsebbs .gt_font_normal {
+#flymqswpbg .gt_font_normal {
   font-weight: normal;
 }
 
-#obayfsebbs .gt_font_bold {
+#flymqswpbg .gt_font_bold {
   font-weight: bold;
 }
 
-#obayfsebbs .gt_font_italic {
+#flymqswpbg .gt_font_italic {
   font-style: italic;
 }
 
-#obayfsebbs .gt_super {
+#flymqswpbg .gt_super {
   font-size: 65%;
 }
 
-#obayfsebbs .gt_footnote_marks {
+#flymqswpbg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#obayfsebbs .gt_asterisk {
+#flymqswpbg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#obayfsebbs .gt_indent_1 {
+#flymqswpbg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#obayfsebbs .gt_indent_2 {
+#flymqswpbg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#obayfsebbs .gt_indent_3 {
+#flymqswpbg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#obayfsebbs .gt_indent_4 {
+#flymqswpbg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#obayfsebbs .gt_indent_5 {
+#flymqswpbg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#obayfsebbs .katex-display {
+#flymqswpbg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#obayfsebbs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#flymqswpbg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3627,23 +3627,23 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>top_live_taped_comparison</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="mxpnfecppi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mxpnfecppi table {
+<div id="stxbrgrunj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#stxbrgrunj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mxpnfecppi thead, #mxpnfecppi tbody, #mxpnfecppi tfoot, #mxpnfecppi tr, #mxpnfecppi td, #mxpnfecppi th {
+#stxbrgrunj thead, #stxbrgrunj tbody, #stxbrgrunj tfoot, #stxbrgrunj tr, #stxbrgrunj td, #stxbrgrunj th {
   border-style: none;
 }
 
-#mxpnfecppi p {
+#stxbrgrunj p {
   margin: 0;
   padding: 0;
 }
 
-#mxpnfecppi .gt_table {
+#stxbrgrunj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3669,12 +3669,12 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-left-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_caption {
+#stxbrgrunj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mxpnfecppi .gt_title {
+#stxbrgrunj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3686,7 +3686,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-width: 0;
 }
 
-#mxpnfecppi .gt_subtitle {
+#stxbrgrunj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3698,7 +3698,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-width: 0;
 }
 
-#mxpnfecppi .gt_heading {
+#stxbrgrunj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3710,13 +3710,13 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_bottom_border {
+#stxbrgrunj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_col_headings {
+#stxbrgrunj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3731,7 +3731,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_col_heading {
+#stxbrgrunj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3751,7 +3751,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#mxpnfecppi .gt_column_spanner_outer {
+#stxbrgrunj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3763,15 +3763,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 4px;
 }
 
-#mxpnfecppi .gt_column_spanner_outer:first-child {
+#stxbrgrunj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mxpnfecppi .gt_column_spanner_outer:last-child {
+#stxbrgrunj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mxpnfecppi .gt_column_spanner {
+#stxbrgrunj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3783,11 +3783,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   width: 100%;
 }
 
-#mxpnfecppi .gt_spanner_row {
+#stxbrgrunj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mxpnfecppi .gt_group_heading {
+#stxbrgrunj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3813,7 +3813,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   text-align: left;
 }
 
-#mxpnfecppi .gt_empty_group_heading {
+#stxbrgrunj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3828,15 +3828,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: middle;
 }
 
-#mxpnfecppi .gt_from_md > :first-child {
+#stxbrgrunj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mxpnfecppi .gt_from_md > :last-child {
+#stxbrgrunj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mxpnfecppi .gt_row {
+#stxbrgrunj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3855,7 +3855,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   overflow-x: hidden;
 }
 
-#mxpnfecppi .gt_stub {
+#stxbrgrunj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3868,7 +3868,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#mxpnfecppi .gt_stub_row_group {
+#stxbrgrunj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3882,15 +3882,15 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   vertical-align: top;
 }
 
-#mxpnfecppi .gt_row_group_first td {
+#stxbrgrunj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mxpnfecppi .gt_row_group_first th {
+#stxbrgrunj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mxpnfecppi .gt_summary_row {
+#stxbrgrunj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3900,16 +3900,16 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#mxpnfecppi .gt_first_summary_row {
+#stxbrgrunj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_first_summary_row.thick {
+#stxbrgrunj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mxpnfecppi .gt_last_summary_row {
+#stxbrgrunj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3919,7 +3919,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_grand_summary_row {
+#stxbrgrunj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3929,7 +3929,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#mxpnfecppi .gt_first_grand_summary_row {
+#stxbrgrunj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3939,7 +3939,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-top-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_last_grand_summary_row_top {
+#stxbrgrunj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3949,11 +3949,11 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_striped {
+#stxbrgrunj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mxpnfecppi .gt_table_body {
+#stxbrgrunj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3962,7 +3962,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-bottom-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_footnotes {
+#stxbrgrunj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3976,7 +3976,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_footnote {
+#stxbrgrunj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3985,7 +3985,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#mxpnfecppi .gt_sourcenotes {
+#stxbrgrunj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3999,7 +3999,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   border-right-color: #D3D3D3;
 }
 
-#mxpnfecppi .gt_sourcenote {
+#stxbrgrunj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4007,72 +4007,72 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
   padding-right: 5px;
 }
 
-#mxpnfecppi .gt_left {
+#stxbrgrunj .gt_left {
   text-align: left;
 }
 
-#mxpnfecppi .gt_center {
+#stxbrgrunj .gt_center {
   text-align: center;
 }
 
-#mxpnfecppi .gt_right {
+#stxbrgrunj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mxpnfecppi .gt_font_normal {
+#stxbrgrunj .gt_font_normal {
   font-weight: normal;
 }
 
-#mxpnfecppi .gt_font_bold {
+#stxbrgrunj .gt_font_bold {
   font-weight: bold;
 }
 
-#mxpnfecppi .gt_font_italic {
+#stxbrgrunj .gt_font_italic {
   font-style: italic;
 }
 
-#mxpnfecppi .gt_super {
+#stxbrgrunj .gt_super {
   font-size: 65%;
 }
 
-#mxpnfecppi .gt_footnote_marks {
+#stxbrgrunj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mxpnfecppi .gt_asterisk {
+#stxbrgrunj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mxpnfecppi .gt_indent_1 {
+#stxbrgrunj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mxpnfecppi .gt_indent_2 {
+#stxbrgrunj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mxpnfecppi .gt_indent_3 {
+#stxbrgrunj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mxpnfecppi .gt_indent_4 {
+#stxbrgrunj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mxpnfecppi .gt_indent_5 {
+#stxbrgrunj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mxpnfecppi .katex-display {
+#stxbrgrunj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mxpnfecppi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#stxbrgrunj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4215,7 +4215,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 <section id="globally-available-content" class="level4">
 <h4 class="anchored" data-anchor-id="globally-available-content">Globally Available Content</h4>
 <p>Additionally, it is notable that nine out of the ten top-viewed titles across the periods were Netflix Original series. Typically, Netflix Originals are available globally across all the countries Netflix operates in. This allows for greater potential audience exposure and access to global markets, which creates an opportunity to increase engagement and generate more viewing hours in different countries.</p>
-<p>Currently, 22.79% of titles are globally available, but account for 48.99% of total viewing hours. This suggests that globally available content is a main driver of viewing hours. Since the percentage of globally available content is still relatively low, Netflix should focus on creating Netflix Originals to be distributed globally. Expanding the globally available catalog could help increase Netflix’s engagement with content.</p>
+<p>Currently, 22.79% of titles are globally available, but account for 48.99% of total viewing hours. This could suggest that globally available content is a main driver of viewing hours. Since the percentage of globally available content is still relatively low, Netflix should focus on creating Netflix Originals to be distributed globally. Expanding the globally available catalog could help increase Netflix’s user engagement.</p>
 </section>
 <section id="catalog-diversification" class="level4">
 <h4 class="anchored" data-anchor-id="catalog-diversification">Catalog Diversification</h4>
@@ -4243,7 +4243,7 @@ $ title_type         &lt;chr&gt; "TV", "TV", "TV", "TV", "TV", "TV", "TV", "TV",
 </div>
 </div>
 <hr>
-<p>Last Updated: Saturday 10 17, 2026 at 12:57PM</p>
+<p>Last Updated: Saturday 10 17, 2026 at 13:16PM</p>
 
 
 </section>

@@ -151,7 +151,7 @@ The initial data exploration provided an overview of the data set's dimensions, 
 library(dplyr)
 glimpse(NETFLIX_DATA)
 ```
-The data set contains over 60,000 records and 11 available variables. Each column has been transformed into the data type most optimized for data modeling. \
+The data set contains over 115,000 records and 12 available variables. Each column has been transformed into the data type most optimized for data modeling. \
 
 <br>
 
@@ -310,7 +310,7 @@ glb_hours_frac <- round((glb_avail_hours/total_hours_viewed) * 100, 2)
 
 - The fraction of viewing hours for globally available content is `r glb_hours_frac`%  
 
-Although Netflix's catalog contains a small share (approximately 1/4) of globally available content, more than 50% of total viewing hours come from globally available titles.
+Although Netflix's catalog contains a small share (less than 1/4) of globally available content, almost 50% of total viewing hours come from globally available titles.
 
 ::: {.callout-note title="Note" collapse="true"}
 
@@ -720,7 +720,7 @@ TV shows accounted for an overwhelming share of total viewing hours at an averag
 
 Additionally, it is notable that nine out of the ten top-viewed titles across the periods were Netflix Original series. Typically, Netflix Originals are available globally across all the countries Netflix operates in. This allows for greater potential audience exposure and access to global markets, which creates an opportunity to increase engagement and generate more viewing hours in different countries.
 
-Currently, `r glb_avail_titles`% of titles are globally available, but account for `r glb_hours_frac`% of total viewing hours. This suggests that globally available content is a main driver of viewing hours. Since the percentage of globally available content is still relatively low, Netflix should focus on creating Netflix Originals to be distributed globally. Expanding the globally available catalog could help increase Netflix's engagement with content.
+Currently, `r glb_avail_titles`% of titles are globally available, but account for `r glb_hours_frac`% of total viewing hours. This could suggest that globally available content is a main driver of viewing hours. Since the percentage of globally available content is still relatively low, Netflix should focus on creating Netflix Originals to be distributed globally. Expanding the globally available catalog could help increase Netflix's user engagement.
 
 
 #### Catalog Diversification
